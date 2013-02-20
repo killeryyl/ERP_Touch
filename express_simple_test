@@ -1,0 +1,3 @@
+a=require('express')();
+a.get('/',[function(q,s){s.write('1' + q.ip)},function(q,s){s.write('2'+q.url);s.end()}]);
+a.listen(3000);
